@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="og:keywords" content="Google meet,Meet,Meetings,Video call,Online class"/>
+    <meta name="og:description" content="Connect people over world"/>
+    <meta name="og:title" content="Google Meet"/>
+    <meta name="og:image:src" content="https://cdn-icons-png.flaticon.com/512/5968/5968552.png"/> 
+
+    <meta name="twitter:card" value="summary_large_image" >
+    <meta name="twitter:title" content="Google Meet" >
+    <meta name="twitter:description" content="Connect people over world" >
+    <meta name="twitter:image:src" content="https://cdn-icons-png.flaticon.com/512/5968/5968552.png" >
+    <meta name="twitter:creator" content="Tarun" > 
+
+    <title title="Google Meet">Google Meet</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968552.png">
+
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .vp{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(60, 59, 59);
+        }
+        .parent-container {
+            padding-top: 10px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .child {
+            background-color: rgb(89, 88, 88);
+            border-radius: 10px;
+            width: 14%;
+            height: 150px;
+            text-align: center;
+            padding: 5px;
+            margin: 5px;
+            display: grid;
+            justify-content: center;
+        }
+        .status{
+            position: absolute;
+            margin-left: 150px;
+            margin-top: 5px;
+            padding-top: 5px;
+            background-color: grey;
+            width: 30px;
+            height: 25px;
+            border-radius: 30px;
+        }
+        .profile{
+            position: relative;
+            top: 30%;
+        }
+        .name{
+            color: #fff;
+            position: relative;
+            left: -70%;
+            bottom: -40%;
+        }
+        .thirteen, .fourteen, .fifteen, .sixteen{
+            width: 20%;
+        }
+        .thirteen > .status{
+            position: absolute;
+            margin-left: 225px;
+        }
+        .fourteen > .status{
+            position: absolute;
+            margin-left: 225px;
+        }
+        .fifteen > .status{
+            position: absolute;
+            margin-left: 225px;
+        }
+        .sixteen > .status{
+            position: absolute;
+            margin-left: 225px;
+        }
+        .thirteen > .name{
+            position: relative;
+            left: -120%;
+            bottom: -40%;
+        }
+        .fourteen > .name{
+            position: relative;
+            left: -120%;
+            bottom: -40%;
+        }
+        .fifteen > .name{
+            position: relative;
+            left: -120%;
+            bottom: -40%;
+        }
+        .sixteen > .name{
+            position: relative;
+            left: -120%;
+            bottom: -40%;
+        }
+        .footer-container{
+            background-color: rgb(60, 59, 59);
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .one-1{
+            display: flex;
+            color: #fff;
+            margin-left: 20px;
+            font-size: medium;
+        }
+        .two-2{
+            display: flex;
+            margin-right: 80px;
+        }
+        .three-3{
+            display: flex;
+            margin-right: 20px;
+        }
+        .circle-2{
+            background-color: rgb(76, 76, 76);
+            margin-left: 10px;
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+        }
+        .circle-3{
+            margin-left: 10px;
+            background-color: red;
+            width: 60px;
+            height: 40px;
+            border-radius: 40px;
+        }
+        .red{
+            background-color: red;
+        }
+        .two-2 span{
+            position: relative;
+            left: 20%;
+            top: 15%;
+        }
+        .two-2 .circle-3 span{
+            left: 30%;
+            top: 15%;
+        }
+        .three-3 span{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="vp">
+        <div class="parent-container">
+            <div class="child one">
+                <div class="profile" title="Profile Photo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="80px" height="80px">
+                </div>
+                <div class="status" title="Muted">
+                    <span id="boot-icon" class="bi bi-mic-mute-fill" style="font-size: 15px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="name" title="Username">NAME</div>
+            </div>
+            <div class="child two">
+                <div class="profile" title="Profile Photo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="80px" height="80px">
+                </div>
+                <div class="status" title="Muted">
+                    <span id="boot-icon" class="bi bi-mic-mute-fill" style="font-size: 15px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="name" title="Username">NAME</div>
+            </div>
+            <div class="child three">
+                <div class="profile" title="Profile Photo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="80px" height="80px">
+                </div>
+                <div class="status" title="Muted">
+                    <span id="boot-icon" class="bi bi-mic-mute-fill" style="font-size: 15px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="name" title="Username">NAME</div>
+            </div>
+            <div class="child four">
+                <div class="profile" title="Profile Photo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="80px" height="80px">
+                </div>
+                <div class="status" title="Muted">
+                    <span id="boot-icon" class="bi bi-mic-mute-fill" style="font-size: 15px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="name" title="Username">NAME</div>
+            </div>
+            <div class="child five">
+                <div class="profile" title="Profile Photo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="80px" height="80px">
+                </div>
+                <div class="status" title="Muted">
+                    <span id="boot-icon" class="bi bi-mic-mute-fill" style="font-size: 15px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="name" title="Username">NAME</div>
+            </div>
+            <div class="child six">
+                <div class="profile" title="Profile Photo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="80px" height="80px">
+                </div>
+                <div class="status" title="Muted">
+                    <span id="boot-icon" class="bi bi-mic-mute-fill" style="font-size: 15px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="name" title="Username">NAME</div>
+            </div>
+            <div class="child seven">
+                <div class="profile" title="Profile Photo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="80px" height="80px">
+                </div>
+                <div class="status" title="Muted">
+                    <span id="boot-icon" class="bi bi-mic-mute-fill" style="font-size: 15px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="name" title="Username">NAME</div>
+            </div>
+            <div class="child eight">
+                <div class="profile" title="Profile Photo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="80px" height="80px">
+                </div>
+                <div class="status" title="Muted">
+                    <span id="boot-icon" class="bi bi-mic-mute-fill" style="font-size: 15px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="name" title="Username">NAME</div>
+            </div>
+            <div class="child nine">
+                <div class="profile" title="Profile Photo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="80px" height="80px">
+                </div>
+                <div class="status" title="Muted">
+                    <span id="boot-icon" class="bi bi-mic-mute-fill" style="font-size: 15px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="name" title="Username">NAME</div>
+            </div>
+            <div class="child ten">
+                <div class="profile" title="Profile Photo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="80px" height="80px">
+                </div>
+                <div class="status" title="Muted">
+                    <span id="boot-icon" class="bi bi-mic-mute-fill" style="font-size: 15px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="name" title="Username">NAME</div>
+            </div>
+            <div class="child eleven">
+                <div class="profile" title="Profile Photo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="80px" height="80px">
+                </div>
+                <div class="status" title="Muted">
+                    <span id="boot-icon" class="bi bi-mic-mute-fill" style="font-size: 15px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="name" title="Username">NAME</div>
+            </div>
+            <div class="child twelve">
+                <div class="profile" title="Profile Photo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="80px" height="80px">
+                </div>
+                <div class="status" title="Muted">
+                    <span id="boot-icon" class="bi bi-mic-mute-fill" style="font-size: 15px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="name" title="Username">NAME</div>
+            </div>
+            <div class="child thirteen">
+                <div class="profile" title="Profile Photo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="80px" height="80px">
+                </div>
+                <div class="status" title="Muted">
+                    <span id="boot-icon" class="bi bi-mic-mute-fill" style="font-size: 15px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="name" title="Username">NAME</div>
+            </div>
+            <div class="child fourteen">
+                <div class="profile" title="Profile Photo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="80px" height="80px">
+                </div>
+                <div class="status" title="Muted">
+                    <span id="boot-icon" class="bi bi-mic-mute-fill" style="font-size: 15px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="name" title="Username">NAME</div>
+            </div>
+            <div class="child fifteen">
+                <div class="profile" title="Profile Photo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="80px" height="80px">
+                </div>
+                <div class="status" title="Muted">
+                    <span id="boot-icon" class="bi bi-mic-mute-fill" style="font-size: 15px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="name" title="Username">NAME</div>
+            </div>
+            <div class="child sixteen">
+                <div class="profile" title="Profile Photo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="80px" height="80px">
+                </div>
+                <div class="status" title="Muted">
+                    <span id="boot-icon" class="bi bi-mic-mute-fill" style="font-size: 15px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="name" title="Username">NAME</div>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="one-1">
+                TIME | MEETING CODE/NAME
+            </div>
+            <div class="two-2">
+                <div class="circle-2 red" title="Unmute">
+                    <span id="boot-icon" class="bi bi-mic-mute" style="font-size: 25px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="circle-2" title="Video">
+                    <span id="boot-icon" class="bi bi-camera-video" style="font-size: 25px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="circle-2" title="Subtitles">
+                    <span id="boot-icon" class="bi bi-badge-cc" style="font-size: 25px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="circle-2" title="Screenshare">
+                    <span id="boot-icon" class="bi bi-window-fullscreen" style="font-size: 25px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="circle-2" title="Options">
+                    <span id="boot-icon" class="bi bi-three-dots-vertical" style="font-size: 25px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="circle-3" title="End Call">
+                    <span id="boot-icon" class="bi bi-telephone" style="font-size: 25px; color: rgb(255, 255, 255);"></span>
+                </div>
+            </div>
+            <div class="three-3">
+                <div class="icon" title="info">
+                    <span id="boot-icon" class="bi bi-info-circle" style="font-size: 30px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="icon" title="Participants">
+                    <span id="boot-icon" class="bi bi-people" style="font-size: 30px; color: rgb(255, 255, 255);"></span>
+                </div>
+                <div class="icon" title="Chat">
+                    <span id="boot-icon" class="bi bi-chat-left-text" style="font-size: 30px; color: rgb(255, 255, 255);"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
